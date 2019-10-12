@@ -7,6 +7,7 @@
 
 #include "blocks/pwd.h"
 #include "blocks/jobs.h"
+#include "blocks/exitcode.h"
 
 /** Custom Colors ----------------------------------------------------------- */
 
@@ -26,6 +27,7 @@ const COLOR_T color_fg_reset = color_white;
 block_t blocks[] = {
     { pwd, NULL },
     { jobs, NULL },
+    { exitcode, NULL },
 };
 
 #endif /* ifndef __CONFIG_H */
