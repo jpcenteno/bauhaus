@@ -1,6 +1,8 @@
 #ifndef __CONFIG_H
 #define __CONFIG_H value
 
+#include <stddef.h>
+
 #include "types.h"
 
 #include "blocks/pwd.h"
@@ -22,7 +24,6 @@ const COLOR_T color_fg_reset = color_white;
 
 block_t blocks[] = {
     { pwd, NULL },
-    NULL
 };
 
 #endif /* ifndef __CONFIG_H */
