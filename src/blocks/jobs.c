@@ -12,7 +12,7 @@ char* jobs(const void* ignored) {
 
     char* njobs = getenv("NJOBS");
 
-    if ( strcmp(njobs, "0") == 0 ) return NULL;
+    if ( (! njobs) || (strcmp(njobs, "0") == 0) ) return NULL;
 
     strncpy(buf, icon, sizeof(buf) - 1);
     strncpy(buf + strlen(icon), njobs, sizeof(buf) - 1);
