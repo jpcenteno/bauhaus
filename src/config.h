@@ -6,6 +6,7 @@
 #include "types.h"
 
 #include "blocks/pwd.h"
+#include "blocks/jobs.h"
 
 /** Custom Colors ----------------------------------------------------------- */
 
@@ -24,6 +25,7 @@ const COLOR_T color_fg_reset = color_white;
 
 block_t blocks[] = {
     { pwd, NULL },
+    { jobs, NULL },
 };
 
 #endif /* ifndef __CONFIG_H */
