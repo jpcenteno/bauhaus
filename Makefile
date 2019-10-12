@@ -1,6 +1,6 @@
 SDIR = src
 ODIR = bin
-OBJS = $(ODIR)/bauhaus.o $(ODIR)/blocks/jobs.o $(ODIR)/blocks/pwd.o $(ODIR)/stru.o
+OBJS = $(ODIR)/bauhaus.o $(ODIR)/blocks/jobs.o $(ODIR)/blocks/pwd.o
 CFLAGS = -g
 bin/bauhaus: $(OBJS)
 	@mkdir -p $(shell dirname $@)
